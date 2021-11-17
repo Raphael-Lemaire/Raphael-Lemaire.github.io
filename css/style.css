@@ -1,0 +1,205 @@
+*,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+
+li {
+  list-style: none; }
+
+.heading-primary {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 4.5rem; } }
+
+.heading-sec__main {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative; }
+
+.contenu {
+  display: block;
+  text-align: center;
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 80rem;
+  margin: auto;
+  line-height: 1.6; }
+  @media only screen and (max-width: 37.5em) {
+    .contenu {
+      font-size: 1.8rem; } }
+  .contenu--lt {
+    color: #eee; }
+
+
+.main-container {
+  max-width: 120rem;
+  margin: auto;
+  width: 92%; }
+
+.sec-pad {
+  padding: 12rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .sec-pad {
+      padding: 8rem 0; } }
+
+.text-primary {
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6; }
+  @media only screen and (max-width: 37.5em) {
+    .text-primary {
+      font-size: 2rem; } }
+
+.d-none {
+  display: none; }
+
+.home-hero {
+  color: #fff;
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background-position: center;
+  height: 100vh;
+  min-height: 80rem;
+  max-height: 120rem;
+  position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .home-hero {
+      height: unset;
+      min-height: unset; } }
+  .home-hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 92%; }
+    @media only screen and (max-width: 37.5em) {
+      .home-hero__content {
+        padding: 19rem 0 13rem 0;
+        margin: auto;
+        position: static;
+        transform: translate(0, 0); } }
+
+.experience {
+  background: #fafafa; }
+
+
+.contact {
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background-size: cover;
+  background-position: center; }
+
+		
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: #000;
+  background: #fff;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__content {
+        padding: 0 2rem; } }
+  .header__logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    transition: color .3s; }
+    .header__logo-container:hover {
+      color: #0062b9; }
+  .header__logo-sub {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .header__links {
+    display: flex; }
+    @media only screen and (max-width: 37.5em) {
+      .header__links {
+        display: none; } }
+  .header__link {
+    padding: 2.2rem 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color .3s; }
+    .header__link:hover {
+      color: #0062b9; }
+    @media only screen and (max-width: 56.25em) {
+      .header__link {
+        padding: 3rem 1.8rem;
+        font-size: 1.5rem; } }
+
+
+.main-footer {
+  background: #000;
+  color: #fff; }
+  .main-footer__upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0;
+  font-size: 15px }
+      .main-footer__upper {
+        padding: 6rem 0; } }
+
+      .main-footer__upper {
+        display: block; } }
+		
+.skills {
+  display: flex;
+  flex-wrap: wrap; }
+
+  .skills__skill {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #777; }
+
+
+#download {
+    text-align: center;
+    margin: auto;
+    display: block;
+    font-size: 30px;
+    transition: 0.2s;
+}
