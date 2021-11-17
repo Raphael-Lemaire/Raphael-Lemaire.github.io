@@ -1,0 +1,561 @@
+:root{
+    --gradient: linear-gradient(
+      45deg, #002b6f , #e01b76
+    );
+  }
+  @font-face {
+  font-family: "rogan";
+  src: url("rogan.ttf");
+  }
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* -------------------------------------------------- HEADER --------------------------------------------------*/
+
+header{
+    height: 100vh;
+    background: url("img/5172658.jpg") no-repeat fixed 100%;
+    background-size: cover;
+}
+.video{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.my-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    padding: 0 30px 0 30px;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+.my-navbar .navbar-brand:hover{
+    border-bottom: 1px solid transparent;
+    color: #f91e7d;
+}
+.my-navbar .navbar-brand{
+    transition: 0.2s;
+    margin-right: 20px;
+    font-size: 25px;
+    color: white;
+}
+.navbar-nav a{
+    margin-top: 3px;
+}
+
+#navbarNavDropdown{
+    justify-content: right;
+}
+.nav-link{
+    border-radius: 10px;
+    width: 120px;
+    margin-left: 20px;
+    text-align: center;
+}
+.my-navbar a{
+    text-underline-offset: 10px;
+    font-size:19px;
+    color: white;
+    border-bottom: 1px solid transparent;
+}
+.my-navbar a:hover{
+    color: white;
+    text-decoration: underline #f91e7d;
+}
+.navbar-toggler span:hover{
+    position: relative;
+    rotate: 180deg;
+}
+.navbar-toggler i{
+    color: white;
+    outline: none;
+    font-size: 25px;
+}
+.navbar-toggler{
+    text-align: center;
+    color: transparent;
+}
+.navbar-toggler span{
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-scrolled{
+	background: linear-gradient(-45deg, #ff006fe8, #012e72ea, #000836e5);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    border-bottom: 1px solid #f91e7d9f;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-brand:hover > img{
+    rotate: 360deg;
+}
+
+.navbar-brand img{
+    transition: 0.5s    ;
+    margin-right: 10px;
+    width: 40px;
+}
+ul{
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-container h1{
+    font-family: rogan;
+    color: white;
+}
+.header-container img{
+    margin-bottom: 20px;
+    opacity: 0.9;
+    width:200px;
+}
+
+ .lien{
+    margin-top: 20px;
+    font-size: 19px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 3px  #e01b77b7;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: none;
+    background-image: var(--gradient);
+    background-size: 300%;
+    transition: background-position 0.7s;
+}
+
+.lien:hover{
+    color: white;
+    background-position: 100%;
+    box-shadow: 1px 1px #e01b76;
+}
+
+.second{
+    margin-top: 30px;
+}
+/* -------------------------------------------------- PRESENTATION --------------------------------------------------*/
+
+
+.presentation-container{
+    padding: 0 100px 0 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.presentation{
+    padding: 50px;
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+#me{
+    position: relative;
+    right: 10%;
+    font-size: 80px;
+    rotate: 20deg;
+    color: #e01b76;
+}
+
+#loupe{
+    position: relative;
+    left: 10%;
+    font-size: 70px;
+    color: #e01b76;
+}
+.presentation h1{
+    color: #e01b76;
+    font-weight: bold;
+}
+.presentation p{
+    color: #000836;
+}
+
+
+/* -------------------------------------------------- FORMATION --------------------------------------------------*/
+
+
+.formation{
+    background: url("img/5172658.jpg") no-repeat fixed 100%;
+    background-size: cover;
+}
+
+.formation{
+    background-color: transparent;
+    padding: 70px 150px 70px 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carte{
+    background-color: rgba(128, 128, 128, 0.1);
+    width: 350px;
+    padding: 0;
+    text-align: center;
+    height: 500px;
+    border: 1px solid white;
+    border-radius:15px ;
+}   
+.carte p, .carte h1, .carte h5 {
+    font-family: rogan;
+    margin-bottom: 0;
+}
+.carte h5 {
+    text-shadow: 10px 10px 10px black;
+}
+.carte h1{
+    text-shadow: 10px 10px 10px black;
+    margin-bottom: 10px;
+}
+.carte i{
+    margin-top: 20px;
+    font-size: 70px;
+    color: white;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.678);
+}
+.top-card{
+    border-bottom: 1px solid white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.226);
+    padding: 30px;
+    border-radius:15px 15px 0 0 ;
+    background-color: rgba(128, 128, 128, 0.05);
+}
+.bot-card{
+    height: 350px;
+    padding: 30px;
+    border-radius:0 0 15px 15px  ;
+    background-color: rgba(128, 128, 128, 0.05);
+    color: white;
+}
+.little-carte{
+    background-color: rgba(128, 128, 128, 0.1);
+    margin-top: 50px;
+    width: 700px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 315px;
+}
+.little-carte .bot-card{
+    height: 210px;
+}
+.little-carte i, .little-carte h1{
+    display: inline;
+    color: white;
+}
+
+.little-carte h1, .little-carte p{
+    font-family: rogan;
+    margin-left: 20px;
+}
+.little-carte i{
+    font-size: 35px;
+}
+
+/* -------------------------------------------------- COMPETENCES --------------------------------------------------*/
+
+.languages{
+    height: 500px; padding: 10px; width: 80%; margin: auto; box-shadow: rgba(0, 0, 0, 0.275) 0px 0px 20px; visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
+.oralLanguages{
+    height: 500px;width: 50%; 
+}
+.interets{
+    height: 500px;width: 50%; 
+}
+.competences{
+    padding: 50px;
+}
+.last{
+    display: flex;
+}
+.interets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.interets h1{
+    margin: -1px auto 50px auto;
+    font-size: 27px;
+}
+.content{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.line{
+    margin-bottom: 15px;
+}
+.line h3{
+    font-size: 25px;
+    color: #e01b76;
+    margin-bottom: 5px;
+}
+.line li{
+    list-style: none;
+    font-size: 17px;
+}
+
+
+/* -------------------------------------------------- CONTACT --------------------------------------------------*/
+
+.contact{
+    background: url("img/5172658.jpg") no-repeat fixed 100%;
+    background-size: cover;
+    padding: 50px;
+}
+
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 5px 5px 0 #e01b76;
+}
+
+form input:hover{
+    box-shadow: 5px 5px 0 #e01b76;
+}
+
+form input{
+    transition: 0.2s;
+    width: 80%;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #002b6f;
+    border: 1px solid #000836;
+}
+
+form input:focus{
+    border:1px solid #e01b76;
+}
+
+form textarea{
+    outline: none;
+    padding: 5px;
+    color: #002b6f;
+    border:1px solid #000836;
+    border-radius: 10px;
+    width: 80%;
+}
+
+form textarea:focus{
+    border:1px solid #e01b76;
+}
+form h1{
+    margin-bottom: 30px;
+    color: #e01b76;
+}
+
+/* -------------------------------------------------- FOOTER --------------------------------------------------*/
+
+footer{
+    background-color: #000836;
+    border-top: 1px solid #e01b76;
+    padding: 50px 100px 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer *{
+    color: white;
+}
+
+.footer-left nav * {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 25px;
+    margin-right: 15px;
+} 
+.footer-left nav *:hover{
+    opacity: 0.8;
+    color: white;
+}
+footer nav{
+    margin-bottom: 15px;
+}
+.footer-right a{
+    font-size: 35px;
+    margin-left: 15px;
+}
+.footer-right i{
+    transition: 0.2s;
+}
+.footer-right i:hover{
+    color: #e01b76;
+}
+
+span{
+    font-family: rogan;
+    color: #f91e7d;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1300px){
+    .presentation{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .languages{
+        width: 100%;
+    }
+    .competences{
+        padding: 10px;
+    }
+    .formation{
+        padding: 20px;
+    }
+    .competences{
+        padding: 50px 0px 30px 0px;
+    }
+    .last{
+        flex-direction: column;
+    }
+    .oralLanguages{
+        width: 100%;
+    }
+    .interets{
+        width: 100%;
+        margin: 0;
+    }
+    .interets *{
+        text-align: center;
+    }
+    .interets h1{
+        font-size: 40px;
+    }
+    .interets h3{
+        font-size: 30px;
+    }
+    form{
+        width: 80%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 800px){
+    .languages {
+        height: 300px;
+    }
+    .my-navbar {
+        padding: 0;
+    }
+    .presentation{
+        width: 100%;
+    }
+    .presentation-container i{
+        display: none;
+    }
+    .presentation-container{
+        padding: 10px;
+    }
+    .formation{
+        padding: 30px;
+    }
+    .carte{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .little-carte{
+        height: 450px;
+    }
+    .little-carte .bot-card{
+        height: 80%;
+        padding: 20px;
+    }
+    .languages {
+        height: 200px;
+    }
+    .contact{
+        padding: 40px;
+    }
+    form{
+        width: 100%;
+    }
+    form input{
+        width: 100%;
+    }
+    footer{
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .little-carte{
+        height: 450px;
+    }
+    footer *{
+        text-align: center;
+    }
+}
